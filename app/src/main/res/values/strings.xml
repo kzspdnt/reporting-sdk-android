@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Clickonometrics SDK Sample App</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="events_fragment_label">Events</string>
+    <string name="preview_fragment_label">Preview</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="homepage_visited">Homepage visited event</string>
+    <string name="product_browsed">Product browsed event</string>
+    <string name="product_added">Product added event</string>
+    <string name="product_removed">Product removed event</string>
+    <string name="browsed_category">Category browsed event</string>
+    <string name="cart">Cart event</string>
+    <string name="order_started">Order started event</string>
+    <string name="products_ordered">Products ordered event</string>
+
+    <string name="preview_button">Preview</string>
+    <string name="app_settings_button">Open app settings</string>
+
+    <string name="with_custom_data">with custom data</string>
+
+    <string name="click_the_button">Click the button to send an event</string>
+</resources>

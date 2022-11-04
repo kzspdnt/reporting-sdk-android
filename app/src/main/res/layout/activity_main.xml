@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textview_first"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="8dp"
+            android:text="@string/click_the_button" />
+
+        <Button
+            android:id="@+id/homepage_visited_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/homepage_visited"/>
+
+        <Button
+            android:id="@+id/product_browsed_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_browsed"/>
+
+        <Button
+            android:id="@+id/product_added_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_added"/>
+
+        <Button
+            android:id="@+id/product_removed_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/product_removed"/>
+
+        <Button
+            android:id="@+id/category_browsed_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/browsed_category"/>
+
+        <Button
+            android:id="@+id/cart_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cart"/>
+
+        <Button
+            android:id="@+id/order_started_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order_started"/>
+
+        <Button
+            android:id="@+id/products_ordered_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/products_ordered"/>
+
+        <CheckBox
+            android:id="@+id/customDataCheckbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/with_custom_data" />
+
+        <Button
+            android:id="@+id/preview_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/preview_button"/>
+
+        <Button
+            android:id="@+id/open_app_settings_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_settings_button"/>
+
+    </LinearLayout>
+</ScrollView>
