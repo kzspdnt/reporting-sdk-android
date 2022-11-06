@@ -5,19 +5,17 @@
 Add this dependency to your module's `build.gradle` file:
 
 **Kotlin**
-```Kotlin
+```kotlin
 dependencies {
 	...
-  
 	implementation("io.github.clickonometrics.android:clickonometrics:1.0")
 }
 ```
 
 **Groovy**
-```Groovy
+```groovy
 dependencies {
 	...
-  
 	implementation 'io.github.clickonometrics.android:clickonometrics:1.0'
 }
 ```
@@ -60,6 +58,30 @@ EuvicMobileSDK.INSTANCE.configure(
     true
 )
 ```
+
+## Android Advertising ID
+To use system ad identifier add this line to your ```AndroidManifest.xml``` file.
+```xml
+<manifest xlmns:android...>
+ ...
+ <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+ <application ...
+</manifest>
+```
+
+## Location Tracking
+
+To allow library to track user's location you need to request about location permission in your app before sending an event. Check how we handle it in the sample app [here](https://github.com/Clickonometrics/reporting-sdk-android/blob/main/app/src/main/java/com/clickonometrics/sample/app/MainActivity.kt#L163).
+
+Remember to add this line to your ```AndroidManifest.xml``` file.
+```xml
+<manifest xlmns:android...>
+ ...
+ <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+ <application ...
+</manifest>
+```
+
 
 ## Sending events
 
