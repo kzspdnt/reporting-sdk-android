@@ -20,6 +20,33 @@ dependencies {
 }
 ```
 
+
+Make sure the `minSdkVersion` in `build.gradle` file is at least 24.
+
+**Kotlin**
+```kotlin
+android {
+	...
+	defaultConfig {
+		...
+		// 24 or greater
+		minSdkVersion(24)
+	}	
+}
+```
+
+**Groovy**
+```groovy
+android {
+	...
+	defaultConfig {
+		...
+		// 24 or greater
+		minSdkVersion 24
+	}	
+}
+```
+
 ## Configuration
 
 Before sending events configuration is required. We recommend to do it just after starting the app, because all events submitted earlier will not be sent.
