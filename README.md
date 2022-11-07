@@ -115,6 +115,10 @@ Remember to add this line to your ```AndroidManifest.xml``` file.
 ### Homepage Visited Event
 
 This event should be sent when user has visited a home page
+This event should be sent when user has visited a home page
+| Param  | Type | Description | Note |
+| --- | --- | --- | --- |
+| `custom` | CustomParams.() -> Unit | represents custom data | Optional |
 
 ### Product Browsed Event
 
@@ -122,6 +126,7 @@ This event should be sent when user has browsed a product.
 | Param  | Type | Description | Note |
 | --- | --- | --- | --- |
 | `product` | Product | represents browsed product | Required |
+| `custom` | CustomParams.() -> Unit | represents custom data | Optional |
 
 ### Product Added Event
 
@@ -129,6 +134,7 @@ This event should be sent when user adds product to the shopping cart.
 | Param  | Type | Description | Note |
 | --- | --- | --- | --- |
 | `product` | Product | represents product added to cart | Required |
+| `custom` | CustomParams.() -> Unit | represents custom data | Optional |
 
 ### Product Removed Event
 
@@ -136,6 +142,7 @@ This event should be sent when user removes product from the shopping cart.
 | Param  | Type | Description | Note |
 | --- | --- | --- | --- |
 | `product` | Product | represents product removed from cart | Required |
+| `custom` | CustomParams.() -> Unit | represents custom data | Optional |
 
 ### Browsed Category Event
 
@@ -144,6 +151,7 @@ This event should be sent when user has browsed category.
 | --- | --- | --- | --- |
 | `name` | String | represents category name | Required |
 | `products` | List<Product> | represents products from the category | Required |
+| `custom` | CustomParams.() -> Unit | represents custom data | Optional |
 
 ### Cart Event
 
@@ -151,10 +159,14 @@ This event should be sent when user views products in the cart.
 | Param  | Type | Description | Note |
 | --- | --- | --- | --- |
 | `products` | List<Product> | represents products from cart | Required |
+| `custom` | CustomParams.() -> Unit | represents custom data | Optional |
 
 ### Order Started Event
 
 This event should be sent when user has started the order process.
+| Param  | Type | Description | Note |
+| --- | --- | --- | --- |
+| `custom` | CustomParams.() -> Unit | represents custom data | Optional |
 
 ### Products Ordered Event
 
@@ -164,6 +176,7 @@ This event should be sent when user has completed the order process.
 | `orderId` | String | represents the unique id of the order process | Required |
 | `saleValue` | String | represents the value of the products user has ordered | Required |
 | `products` | List<Product> | represents ordered products | Required |
+| `custom` | CustomParams.() -> Unit | represents custom data | Optional |
 | `currency` | String | represents the currency of the sale value. Should be a three letter value consistent with ISO 4217 norm | Optional |
 
 ### Appending custom data
