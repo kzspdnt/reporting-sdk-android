@@ -86,8 +86,14 @@ EuvicMobileSDK.INSTANCE.configure(
 )
 ```
 
-## Android Advertising ID
-To use system ad identifier add this line to your ```AndroidManifest.xml``` file.
+## Android Advertising ID (AAID)
+
+It's **required** to provide the application with the AAID. Only with this identifier it's possible to show ads to the given user.
+
+If user's privacy policy on the device does not permit the personalized advertising - no ads will be shown. Euvic Mobile SDK will still report user activity for statistical purposes.
+
+To provide system ad identifier add this line to your `AndroidManifest.xml` file:
+
 ```xml
 <manifest xlmns:android...>
  ...
